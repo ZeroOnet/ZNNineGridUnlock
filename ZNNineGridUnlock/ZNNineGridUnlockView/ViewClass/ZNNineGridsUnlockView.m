@@ -40,13 +40,6 @@
 
 @implementation ZNNineGridsUnlockView
 
-#warning  1.顺序完成才能解锁，逆序完成不能解锁；\
-            2.代理返回目前解锁状态;\
-            3.为了增加绘制解锁图案的多样性，不实现自动连接两个连接点中间点的选中功能;\
-            4.图案错误，绘制红色的图标和线条;\
-            5.锁的状态：设置密码、确认密码、输入密码、密码错误提示、密码正确视图消失、5次20秒等待、重置密码(前提：正确输入密码) \
-            6.不显示绘制解锁图案过程选项 OK
-
 #pragma mark - initializer
 
 - (instancetype)init {
@@ -167,7 +160,6 @@
     self.userInteractionEnabled = NO;
     self.finishStroking = YES;
     
-#warning 字符串判等问题，常量池？
     NSString *selectedPWD = [self getPWDFromSelectedGrids];
     
     switch (_unlockStatus) {
@@ -227,7 +219,6 @@
     [UIView animateWithDuration:0.5f animations:^{
         self.transform = CGAffineTransformMakeScale(1.4f, 1.4f);
         self.alpha = 0.1f;
-#warning 旋转角度问题
         //self.transform = CGAffineTransformRotate(self.transform, M_PI);
     } completion:^(BOOL finished) {
         [self removeFromSuperview];

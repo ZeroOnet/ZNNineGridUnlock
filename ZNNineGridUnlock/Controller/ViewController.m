@@ -28,7 +28,6 @@
 #pragma mark - Delegate Call back
 
 - (void)ZNUnlockCallBackWithStatus:(NSString *)status andPWD:(NSString *)pwd {
-#warning 代理回调修改被代理对象属性值无效
     NSLog(@"status:%@ pwd:%@", status, pwd);
 }
 
