@@ -2,7 +2,7 @@
 
 This is a kit to realize nine grids unlock simulates `Android`, you can add a new unlock method for your App with `ZNNineGridUnlock`, including custom your item image or background and stoke line color。Meanwhile，the password of nine grids can be reset after you input previous password successfully！
 
-Your operation is very sample, just like these code as follows：
+Your operation is very sample, just like doing these code as follows：
 
 ```Objective-C
 - (ZNNineGridsUnlockView *)NGUView {
@@ -26,3 +26,5 @@ Your operation is very sample, just like these code as follows：
     return _NGUView;
 }
 ```
+
+if you are a Chinese，you can know some details about this kit with http://blog.csdn.net/zeroonet/article/details/68069011
