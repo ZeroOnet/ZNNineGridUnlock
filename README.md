@@ -28,3 +28,5 @@ Your operation is very sample, just like doing these code as follows：
 ```
 
 if you are a Chinese，you can know some details about this kit with http://blog.csdn.net/zeroonet/article/details/68069011
+
+Thanks for your reading!
