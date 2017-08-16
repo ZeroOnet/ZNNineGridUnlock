@@ -11,7 +11,7 @@
 
 #define kZNNineGridUnlockPWD            @"ZNNineGridUnlockPWD"
 
-#warning 用户能自定义的状态仅为ZNUnlockStatusSettingPWD、ZNUnlockStatusInputPWD、ZNUnlockStatusResetPWD
+//#warning 用户能自定义的状态仅为ZNUnlockStatusSettingPWD、ZNUnlockStatusInputPWD、ZNUnlockStatusResetPWD
 typedef NS_ENUM(NSUInteger, ZNUnlockStatus) {
     ZNUnlockStatusSettingPWD = 1,//1
     ZNUnlockStatusSettingPWDFailed,
