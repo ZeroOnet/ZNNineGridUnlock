@@ -36,6 +36,9 @@ All of messages about unlock view like status and password will show you by dele
 
 ```
 
+The next git show how to input password:
+![image](https://github.com/ZeroOnet/ZNNineGridUnlock/blob/master/ZNNineGridUnlock/display/display.gif)
+
 
 if you are a Chinese，you can know some details about this kit with http://blog.csdn.net/zeroonet/article/details/68069011
 
