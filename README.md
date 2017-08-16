@@ -27,6 +27,16 @@ Your operation is very sample, just like doing these code as follows：
 }
 ```
 
+All of messages about unlock view like status and password will show you by delegate：
+```
+
+- (void)ZNUnlockCallBackWithStatus:(NSString *)status andPWD:(NSString *)pwd {
+    NSLog(@"status:%@ pwd:%@", status, pwd);
+}
+
+```
+
+
 if you are a Chinese，you can know some details about this kit with http://blog.csdn.net/zeroonet/article/details/68069011
 
 Thanks for your reading!
