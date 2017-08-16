@@ -15,11 +15,6 @@
 		4F200A1D1E8396BA00ADBC44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F200A1C1E8396BA00ADBC44 /* AppDelegate.m */; };
 		4F200A241E8396CF00ADBC44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F200A201E8396CF00ADBC44 /* ViewController.m */; };
 		4F200A271E83971E00ADBC44 /* ZNNineGridsUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F200A261E83971E00ADBC44 /* ZNNineGridsUnlockView.m */; };
-		4FC27EBE1F44138C008DAEB7 /* disableInput.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4FC27EB91F44138C008DAEB7 /* disableInput.gif */; };
-		4FC27EBF1F44138C008DAEB7 /* displayInputpwd.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4FC27EBA1F44138C008DAEB7 /* displayInputpwd.gif */; };
-		4FC27EC01F44138C008DAEB7 /* hiddenLine.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4FC27EBB1F44138C008DAEB7 /* hiddenLine.gif */; };
-		4FC27EC11F44138C008DAEB7 /* resetpwd.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4FC27EBC1F44138C008DAEB7 /* resetpwd.gif */; };
-		4FC27EC21F44138C008DAEB7 /* unlock.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4FC27EBD1F44138C008DAEB7 /* unlock.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +44,6 @@
 		4F200A251E83971E00ADBC44 /* ZNNineGridsUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNNineGridsUnlockView.h; sourceTree = "<group>"; };
 		4F200A261E83971E00ADBC44 /* ZNNineGridsUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNNineGridsUnlockView.m; sourceTree = "<group>"; };
 		4F200A281E83973800ADBC44 /* ZNUnlockCallBack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZNUnlockCallBack.h; sourceTree = "<group>"; };
-		4FC27EB91F44138C008DAEB7 /* disableInput.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = disableInput.gif; sourceTree = "<group>"; };
-		4FC27EBA1F44138C008DAEB7 /* displayInputpwd.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = displayInputpwd.gif; sourceTree = "<group>"; };
-		4FC27EBB1F44138C008DAEB7 /* hiddenLine.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiddenLine.gif; sourceTree = "<group>"; };
-		4FC27EBC1F44138C008DAEB7 /* resetpwd.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = resetpwd.gif; sourceTree = "<group>"; };
-		4FC27EBD1F44138C008DAEB7 /* unlock.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = unlock.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +135,6 @@
 		4F200A211E8396CF00ADBC44 /* ZNNineGridUnlockView */ = {
 			isa = PBXGroup;
 			children = (
-				4FC27EB81F44138C008DAEB7 /* display */,
 				4F200A221E8396CF00ADBC44 /* DelegateProtocol */,
 				4F200A231E8396CF00ADBC44 /* ViewClass */,
 			);
@@ -167,18 +156,6 @@
 				4F200A261E83971E00ADBC44 /* ZNNineGridsUnlockView.m */,
 			);
 			path = ViewClass;
-			sourceTree = "<group>";
-		};
-		4FC27EB81F44138C008DAEB7 /* display */ = {
-			isa = PBXGroup;
-			children = (
-				4FC27EB91F44138C008DAEB7 /* disableInput.gif */,
-				4FC27EBA1F44138C008DAEB7 /* displayInputpwd.gif */,
-				4FC27EBB1F44138C008DAEB7 /* hiddenLine.gif */,
-				4FC27EBC1F44138C008DAEB7 /* resetpwd.gif */,
-				4FC27EBD1F44138C008DAEB7 /* unlock.gif */,
-			);
-			path = display;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,13 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FC27EC11F44138C008DAEB7 /* resetpwd.gif in Resources */,
-				4FC27EBE1F44138C008DAEB7 /* disableInput.gif in Resources */,
-				4FC27EC21F44138C008DAEB7 /* unlock.gif in Resources */,
 				4F200A051E8395FE00ADBC44 /* LaunchScreen.storyboard in Resources */,
 				4F200A021E8395FE00ADBC44 /* Assets.xcassets in Resources */,
-				4FC27EBF1F44138C008DAEB7 /* displayInputpwd.gif in Resources */,
-				4FC27EC01F44138C008DAEB7 /* hiddenLine.gif in Resources */,
 				4F200A001E8395FE00ADBC44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
