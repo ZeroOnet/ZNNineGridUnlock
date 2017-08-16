@@ -15,6 +15,7 @@
 		4F200A1D1E8396BA00ADBC44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F200A1C1E8396BA00ADBC44 /* AppDelegate.m */; };
 		4F200A241E8396CF00ADBC44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F200A201E8396CF00ADBC44 /* ViewController.m */; };
 		4F200A271E83971E00ADBC44 /* ZNNineGridsUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F200A261E83971E00ADBC44 /* ZNNineGridsUnlockView.m */; };
+		4FC27EC61F441800008DAEB7 /* display.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4FC27EC51F441800008DAEB7 /* display.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4F200A251E83971E00ADBC44 /* ZNNineGridsUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNNineGridsUnlockView.h; sourceTree = "<group>"; };
 		4F200A261E83971E00ADBC44 /* ZNNineGridsUnlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNNineGridsUnlockView.m; sourceTree = "<group>"; };
 		4F200A281E83973800ADBC44 /* ZNUnlockCallBack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZNUnlockCallBack.h; sourceTree = "<group>"; };
+		4FC27EC51F441800008DAEB7 /* display.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = display.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		4F2009F41E8395FE00ADBC44 /* ZNNineGridUnlock */ = {
 			isa = PBXGroup;
 			children = (
+				4FC27EC41F441800008DAEB7 /* display */,
 				4F200A1A1E8396BA00ADBC44 /* AppDelegate */,
 				4F200A1E1E8396CF00ADBC44 /* Controller */,
 				4F200A211E8396CF00ADBC44 /* ZNNineGridUnlockView */,
@@ -156,6 +159,14 @@
 				4F200A261E83971E00ADBC44 /* ZNNineGridsUnlockView.m */,
 			);
 			path = ViewClass;
+			sourceTree = "<group>";
+		};
+		4FC27EC41F441800008DAEB7 /* display */ = {
+			isa = PBXGroup;
+			children = (
+				4FC27EC51F441800008DAEB7 /* display.gif */,
+			);
+			path = display;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F200A051E8395FE00ADBC44 /* LaunchScreen.storyboard in Resources */,
+				4FC27EC61F441800008DAEB7 /* display.gif in Resources */,
 				4F200A021E8395FE00ADBC44 /* Assets.xcassets in Resources */,
 				4F200A001E8395FE00ADBC44 /* Main.storyboard in Resources */,
 			);
