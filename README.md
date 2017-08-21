@@ -36,7 +36,7 @@ All of messages about unlock view like status and password will show you by dele
 
 ```
 
-The next git show how to input password:
+The next gif show how to input password:
 
 ![image](https://github.com/ZeroOnet/ZNNineGridUnlock/blob/master/ZNNineGridUnlock/display/display.gif)
 
