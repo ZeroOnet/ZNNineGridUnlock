@@ -58,9 +58,7 @@
         [self addSubview:self.strokeLineShowView];
         
         [self.grids enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if (!*stop) {
-                [self addSubview:self.grids[idx]];
-            }
+            [self addSubview:self.grids[idx]];
         }];
     }
     
@@ -88,9 +86,7 @@
         self.strokeLineShowView.frame = self.bounds;
         
         [self.grids enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if (!*stop) {
-                obj.frame = CGRectMake((idx % 3) * (kElementSize + kCloseElementMargin), (idx / 3) * (kElementSize +kCloseElementMargin), kElementSize, kElementSize);
-            }
+            obj.frame = CGRectMake((idx % 3) * (kElementSize + kCloseElementMargin), (idx / 3) * (kElementSize +kCloseElementMargin), kElementSize, kElementSize);
         }];
     }
 }
@@ -102,18 +98,16 @@
     CGPoint location = [touchLocation locationInView:self];
     
     [self.grids enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (!*stop) {
-            if (CGRectContainsPoint(obj.frame, location) && !obj.selected) {
-                if (self.isShouldShowStrokeProcessing) {
-                    [obj setImage:[UIImage imageNamed:_selectedImageName] forState:UIControlStateNormal];
-        
-                    _strokeStartLocation = obj.center;
-                }
-                
-                obj.selected = YES;
-                
-                [self.selectedGrids addObject:obj];
+        if (CGRectContainsPoint(obj.frame, location) && !obj.selected) {
+            if (self.isShouldShowStrokeProcessing) {
+                [obj setImage:[UIImage imageNamed:_selectedImageName] forState:UIControlStateNormal];
+    
+                _strokeStartLocation = obj.center;
             }
+            
+            obj.selected = YES;
+            
+            [self.selectedGrids addObject:obj];
         }
     }];
 }
@@ -129,25 +123,23 @@
     }
     
     [self.grids enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (!*stop) {
-            if (CGRectContainsPoint(obj.frame, location) && !obj.selected) {
-                if (self.isShouldShowStrokeProcessing) {
-                    [obj setImage:[UIImage imageNamed:_selectedImageName] forState:UIControlStateNormal];
+        if (CGRectContainsPoint(obj.frame, location) && !obj.selected) {
+            if (self.isShouldShowStrokeProcessing) {
+                [obj setImage:[UIImage imageNamed:_selectedImageName] forState:UIControlStateNormal];
+                
+                if (_strokeStartLocation.x != 0) {
+                    _strokeDestinationLocation = obj.center;
+                    self.shouldStroke = YES;
                     
-                    if (_strokeStartLocation.x != 0) {
-                        _strokeDestinationLocation = obj.center;
-                        self.shouldStroke = YES;
-                        
-                        [self setNeedsDisplay];
-                    } else {
-                        _strokeStartLocation = obj.center;
-                    }
+                    [self setNeedsDisplay];
+                } else {
+                    _strokeStartLocation = obj.center;
                 }
-                
-                obj.selected = YES;
-                
-                [self.selectedGrids addObject:obj];
             }
+            
+            obj.selected = YES;
+            
+            [self.selectedGrids addObject:obj];
         }
     }];
 }
